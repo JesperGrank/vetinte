@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+
+}
+
+.bas{
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
+
+th, td{
+    min-width:60px;
+    border: 1px solid black;
+    text-align:left;
+}
+
+.tjock th, .tjock td {
+    border: 2px solid black;
+}
+
+.tjock th {
+    background-color:grey
+}
+
+.tjock td{
+    background-color:rgb(241, 181, 181)
+}
+
+.bas :not(.tjock) > td:nth-child(even) {
+    background:yellow;
+}
+
+input {
+    width:60px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-align:center
+  }
+
+.chatbox {
+    border: 2px solid black;
+    height:69vh;
+    width:336px;
+    background-color: lightblue;
+
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+    height:100vh;
+    padding-top:6.8%;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(90deg, #8E9131, #864D21);
+    background-size:200%;
+    animation-name:puke; 
+    animation-duration: 800ms;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes puke{
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100%;
+    } */
+} 
+
+
+.left{
+    border:2px solid black;
+    background-color:purple;
+    border-radius: 5px;
+    margin-top:60px;
+    margin-left:10px;
+    display:inline-block;
+
+}
+
+
+
+.right{
+    border:2px solid rgb(0, 0, 0);
+    background-color:rgb(238, 255, 0);
+    display:inline-block;
+    border-radius:5px;
+    margin-top:15px;
+    margin-right:10px;
+    float:right;
+}
